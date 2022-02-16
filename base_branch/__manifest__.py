@@ -1,0 +1,20 @@
+{
+    "name": "Multiple Branches",
+    "version": "13.0.1.0.0",
+    "category": "Hidden",
+    "author": "Hadooc",
+    "depends": ["web"],
+    "data": [
+        "security/security.xml",
+        "security/ir.model.access.csv",
+        "views/company_branch_views.xml",
+        "views/layout_templates.xml",
+        "views/res_users_views.xml",
+        "views/res_partner_views.xml",
+        "views/res_country_city_views.xml",
+        "views/res_country_zone_views.xml",
+    ],
+    "demo": ["data/base_branch_demo.xml"],
+    "qweb": ["static/src/xml/*.xml"],
+    "installable": True,
+}

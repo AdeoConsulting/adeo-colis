@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="base_branch_branch_tunis" model="res.company.branch">
+        <field name="name">Tunis</field>
+        <field name="code">tunis</field>
+        <field name="user_id" ref="base.user_demo" />
+    </record>
+    <record id="base_branch_branch_sfax" model="res.company.branch">
+        <field name="name">Sfax</field>
+        <field name="code">sfax</field>
+        <field name="user_id" ref="base.user_demo" />
+    </record>
+    <record id="base_branch_branch_gabes" model="res.company.branch">
+        <field name="name">Gabes</field>
+        <field name="code">gabes</field>
+        <field name="user_id" ref="base.user_demo" />
+    </record>
+</odoo>

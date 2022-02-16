@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record id="res_company_branch_form_view" model="ir.ui.view">
+            <field name="name">res.company.branch.form</field>
+            <field name="model">res.company.branch</field>
+            <field name="arch" type="xml">
+                <form name="Company Branch">
+                    <sheet>
+                        <field name="logo" widget="image" class="oe_avatar" />
+                        <div class="oe_title">
+                            <label for="name" class="oe_edit_only" />
+                            <h1>
+                                <field name="name" />
+                            </h1>
+                        </div>
+                        <group name="branch">
+                            <group name="branch_code">
+                                <field name="code" />
+                            </group>
+                            <group name="user">
+                                <field
+                                    name="user_id"
+                                    options="{'no_open': True, 'no_create': True}"
+                                />
+                            </group>
+                            <group name="company">
+                                <field
+                                    name="company_id"
+                                    groups="base.group_multi_company"
+                                    options="{'no_open': True, 'no_create': True}"
+                                />
+                            </group>
+                            <group name="zone">
+                                <field
+                                    name="zone_id"
+                                    options="{'no_open': True, 'no_create': True}"
+                                />
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="company_branch_tree_view" model="ir.ui.view">
+            <field name="name">res.company.branch.list</field>
+            <field name="model">res.company.branch</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name" />
+                    <field name="company_id" groups="base.group_multi_company" />
+                </tree>
+            </field>
+        </record>
+        <record id="company_branch_action" model="ir.actions.act_window">
+            <field name="name">Companies Branches</field>
+            <field name="res_model">res.company.branch</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Click to create a New Branch.
+                </p>
+            </field>
+        </record>
+        <menuitem
+            id="company_branch_menu"
+            name="Companies Branches"
+            parent="base.menu_users"
+            action="company_branch_action"
+        />
+    </data>
+</odoo>

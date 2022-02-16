@@ -1,0 +1,157 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* base_branch
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-04-06 15:04+0000\n"
+"PO-Revision-Date: 2020-04-06 15:04+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: base_branch
+#: model:ir.model.fields,field_description:base_branch.field_res_users__company_branch_ids
+msgid "Allowed Branches"
+msgstr "الفروع المسموح بها"
+
+#. module: base_branch
+#: model:ir.model.fields,field_description:base_branch.field_res_partner__company_branch_id
+msgid "Branch"
+msgstr "الفرع"
+
+#. module: base_branch
+#: model:ir.model.fields,field_description:base_branch.field_res_company_branch__logo
+msgid "Branch Logo"
+msgstr "شعار الفرع"
+
+#. module: base_branch
+#: model_terms:ir.ui.view,arch_db:base_branch.external_layout_header_inherit_company_branch
+#: model_terms:ir.ui.view,arch_db:base_branch.internal_layout_header_inherit_company_branch
+msgid "Branch:"
+msgstr ":الفرع"
+
+#. module: base_branch
+#: model_terms:ir.ui.view,arch_db:base_branch.view_users_form_inherit_company_branch
+msgid "Branches"
+msgstr "الفروع"
+
+#. module: base_branch
+#: model_terms:ir.actions.act_window,help:base_branch.company_branch_action
+msgid "Click to create a New Branch."
+msgstr "انقر لإنشاء فرع جديد"
+
+#. module: base_branch
+#: model:ir.model.fields,field_description:base_branch.field_res_company_branch__code
+msgid "Code"
+msgstr "الرمز"
+
+#. module: base_branch
+#: model:ir.actions.act_window,name:base_branch.company_branch_action
+#: model:ir.ui.menu,name:base_branch.company_branch_menu
+msgid "Companies Branches"
+msgstr "الفروع"
+
+#. module: base_branch
+#: model:ir.model.fields,field_description:base_branch.field_res_company_branch__company_id
+msgid "Company"
+msgstr "الشركة"
+
+#. module: base_branch
+#: model:ir.model,name:base_branch.model_res_company_branch
+msgid "Company Branch"
+msgstr "الفرع"
+
+#. module: base_branch
+#: model:ir.model,name:base_branch.model_res_partner
+msgid "Contact"
+msgstr "جهة الاتصال"
+
+#. module: base_branch
+#: model:ir.model.fields,field_description:base_branch.field_res_company_branch__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: base_branch
+#: model:ir.model.fields,field_description:base_branch.field_res_company_branch__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: base_branch
+#: model:ir.model.fields,field_description:base_branch.field_res_users__company_branch_id
+msgid "Current Branch"
+msgstr "الفرع الحالي"
+
+#. module: base_branch
+#: model:ir.model.fields,field_description:base_branch.field_res_users__branch_ids
+msgid "Current Branches"
+msgstr "الفروع الحالية"
+
+#. module: base_branch
+#: model:ir.model.fields,field_description:base_branch.field_res_company_branch__display_name
+msgid "Display Name"
+msgstr "المسمى"
+
+#. module: base_branch
+#. openerp-web
+#: code:addons/base_branch/static/src/xml/switch_branch_menu.xml:0
+#, python-format
+msgid "Dropdown menu"
+msgstr "القائمة المنسدلة"
+
+#. module: base_branch
+#: model:ir.model,name:base_branch.model_ir_http
+msgid "HTTP Routing"
+msgstr "مسار HTTP"
+
+#. module: base_branch
+#: model:ir.model.fields,field_description:base_branch.field_res_company_branch__id
+msgid "ID"
+msgstr ""
+
+#. module: base_branch
+#: model:ir.model.fields,field_description:base_branch.field_res_company_branch____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: base_branch
+#: model:ir.model.fields,field_description:base_branch.field_res_company_branch__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: base_branch
+#: model:ir.model.fields,field_description:base_branch.field_res_company_branch__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: base_branch
+#: model:ir.model.fields,field_description:base_branch.field_res_company_branch__user_id
+msgid "Manager"
+msgstr "المدير"
+
+#. module: base_branch
+#: model:res.groups,name:base_branch.group_multi_branches
+msgid "Multi Branches "
+msgstr "تعدد الفروع"
+
+#. module: base_branch
+#: model:ir.model.fields,field_description:base_branch.field_res_company_branch__name
+msgid "Name"
+msgstr "المسمى"
+
+#. module: base_branch
+#: model:ir.model,name:base_branch.model_res_users
+msgid "Users"
+msgstr "المستخدمون"
+
+#. module: base_branch
+#: code:addons/base_branch/models/res_partner.py:0
+#: code:addons/base_branch/models/res_users.py:0
+#, python-format
+msgid "You are not allowed to access"
+msgstr "غير مسموح لك بالوصول"

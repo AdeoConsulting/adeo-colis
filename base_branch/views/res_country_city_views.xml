@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="view_country_city_tree" model="ir.ui.view">
+        <field name="name">res.country.city.tree</field>
+        <field name="model">res.country.city</field>
+        <field name="arch" type="xml">
+            <tree string="City" editable="bottom">
+                <field name="name" />
+                <field name="code" />
+                <field name="state_id" options="{'no_create': True}" />
+            </tree>
+        </field>
+    </record>
+    <record id="view_country_city_form" model="ir.ui.view">
+        <field name="name">res.country.city.form</field>
+        <field name="model">res.country.city</field>
+        <field name="arch" type="xml">
+            <form string="City">
+                <sheet>
+                    <group>
+                        <field name="name" />
+                        <field name="code" />
+                        <field
+                            name="state_id"
+                            options="{'no_open': True, 'no_create': True}"
+                        />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="view_country_city_search" model="ir.ui.view">
+        <field name="name">res.country.city.search</field>
+        <field name="model">res.country.city</field>
+        <field name="arch" type="xml">
+            <search string="State">
+                <field name="name" />
+                <field name="state_id" />
+                <group string="Group By">
+                    <filter
+                        name="groupby_state"
+                        string="State"
+                        context="{'group_by': 'state_id'}"
+                    />
+                </group>
+            </search>
+        </field>
+    </record>
+    <record id="action_country_city" model="ir.actions.act_window">
+        <field name="name">Cities</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">res.country.city</field>
+        <field name="view_id" ref="view_country_city_tree" />
+    </record>
+</odoo>
